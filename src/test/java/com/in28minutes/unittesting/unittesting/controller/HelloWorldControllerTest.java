@@ -23,7 +23,7 @@ public class HelloWorldControllerTest {
     void helloWorld_basic() throws Exception {
         // call GET "/hello"
         RequestBuilder request = MockMvcRequestBuilders
-                .get("/hello")
+                .get("/dummy-item")
                 .accept(MediaType.APPLICATION_JSON);
 
         MvcResult result = mockMvc.perform(request)
